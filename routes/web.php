@@ -17,3 +17,4 @@ Route::get('/logout', function (){
     Session::forget('user');
     return redirect('login');
 });
+Route::get('removecart/{id}', [ProductController::class,'removeCart']);
