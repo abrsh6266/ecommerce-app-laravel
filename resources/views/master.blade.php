@@ -31,5 +31,21 @@
         height: 500px;
         padding-top: 100px;
     }
+    img.slider-img{
+        height: 400px !important
+    }
+    .custom-product{
+        height: 600px
+    }
+    .trending-image{
+        height: 100px;
+    }
+    .trening-item{
+        float: left;
+        width: 20%;
+    }
+    .trending-wrapper{
+        margin: 30px;
+    }
 </style>
 </html>
