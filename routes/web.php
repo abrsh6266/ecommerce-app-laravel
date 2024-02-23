@@ -18,3 +18,4 @@ Route::get('/logout', function (){
     return redirect('login');
 });
 Route::get('removecart/{id}', [ProductController::class,'removeCart']);
+Route::get('ordernow', [ProductController::class,'orderNow']);
