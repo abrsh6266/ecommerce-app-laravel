@@ -7,7 +7,10 @@ use Illuminate\Support\Facades\Route;
 Route::get('/login', function () {
     return view('login');
 });
+Route::view('/register','register');
+
 Route::post('/login', [UserController::class,'login']);
+Route::post('/register', [UserController::class,'register']);
 Route::get('/',[ProductController::class,'index']);
 Route::get('/detail/{id}', [ProductController::class,'detail']);
 Route::get('/cartlist', [ProductController::class,'CartList']);
